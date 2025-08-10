@@ -53,7 +53,7 @@ const HeatMap: React.FC<HeatMapProps> = ({ weatherData }) => {
     svg.selectAll("*").remove(); // Clear previous render
 
     // Load and display the world map SVG
-    const svgPath = `${import.meta.env.BASE_URL}/assets/mercator-projection-world-map.svg`;
+    const svgPath = `../assets/mercator-projection-world-map.svg`;
     d3.xml(svgPath).then(data => {
       const importedSvgNode = data.documentElement;
       const importedSvg = d3.select(importedSvgNode);
