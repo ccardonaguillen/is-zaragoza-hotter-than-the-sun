@@ -20,11 +20,10 @@ export async function fetchWeatherData(): Promise<City[]> {
 
     const citiesWithWeather = cities.map((city, index) => {
         const cityWeather = weatherResults[index];
-        console.log('City weather:', cityWeather);
 
         return {
             ...city,
-            temperature: cityWeather ? Math.round(cityWeather.main.temp) : 'N/A',
+            temperature: cityWeather ? Math.round(cityWeather.main.temp) : null,
         };
     });
     return citiesWithWeather;
