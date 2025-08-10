@@ -16,7 +16,7 @@ const HeatMap: React.FC<HeatMapProps> = ({ weatherData }) => {
   
   // Load SVG to get its dimensions
   useEffect(() => {
-    const svgPath = `${import.meta.env.BASE_URL}mercator-projection-world-map.svg`;
+    const svgPath = `assets/mercator-projection-world-map.svg`;
     d3.xml(svgPath).then(data => {
       const importedSvg = d3.select(data.documentElement);
       const viewBox = importedSvg.attr("viewBox");
