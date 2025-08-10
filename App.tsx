@@ -82,11 +82,11 @@ const App: React.FC = () => {
                        {zaragozaData && <DynamicComparator zaragozaData={zaragozaData} otherCitiesData={otherCitiesData} />}
                     </div>
                     
-                    <div className="lg:col-span-3 bg-white dark:bg-slate-800/50 p-6 rounded-2xl shadow-lg">
+                    {/* <div className="lg:col-span-3 bg-white dark:bg-slate-800/50 p-6 rounded-2xl shadow-lg">
                         <h2 className="text-3xl font-bold text-center mb-2 font-display text-red-600 dark:text-red-400">Interactive Heat Map of the World</h2>
                         <p className="text-center text-slate-600 dark:text-slate-400 mb-6">Hover over the dots to see who's really sweating.</p>
                         <HeatMap weatherData={weatherData} />
-                    </div>
+                    </div> */}
 
                     <div className="lg:col-span-3">
                         <GlobalWallOfHeat
